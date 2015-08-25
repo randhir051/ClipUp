@@ -14,6 +14,10 @@
 		22EA83AB1B8CAD5700AB6641 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22EA83AA1B8CAD5700AB6641 /* Images.xcassets */; };
 		22EA83AE1B8CAD5700AB6641 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22EA83AC1B8CAD5700AB6641 /* LaunchScreen.xib */; };
 		22EA83BA1B8CAD5700AB6641 /* ClipUpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EA83B91B8CAD5700AB6641 /* ClipUpTests.swift */; };
+		22EA83CA1B8CB24700AB6641 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22EA83C91B8CB24700AB6641 /* NotificationCenter.framework */; };
+		22EA83CF1B8CB24700AB6641 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EA83CE1B8CB24700AB6641 /* TodayViewController.swift */; };
+		22EA83D11B8CB24700AB6641 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22EA83D01B8CB24700AB6641 /* MainInterface.storyboard */; };
+		22EA83D41B8CB24700AB6641 /* Clips.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 22EA83C71B8CB24700AB6641 /* Clips.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +28,28 @@
 			remoteGlobalIDString = 22EA839B1B8CAD5600AB6641;
 			remoteInfo = ClipUp;
 		};
+		22EA83D21B8CB24700AB6641 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22EA83941B8CAD5600AB6641 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22EA83C61B8CB24700AB6641;
+			remoteInfo = Clips;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		22EA83D81B8CB24700AB6641 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				22EA83D41B8CB24700AB6641 /* Clips.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		22EA839C1B8CAD5700AB6641 /* ClipUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClipUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,6 +63,11 @@
 		22EA83B31B8CAD5700AB6641 /* ClipUpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClipUpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		22EA83B81B8CAD5700AB6641 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22EA83B91B8CAD5700AB6641 /* ClipUpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipUpTests.swift; sourceTree = "<group>"; };
+		22EA83C71B8CB24700AB6641 /* Clips.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Clips.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		22EA83C91B8CB24700AB6641 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		22EA83CD1B8CB24700AB6641 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22EA83CE1B8CB24700AB6641 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		22EA83D01B8CB24700AB6641 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +85,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		22EA83C41B8CB24700AB6641 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22EA83CA1B8CB24700AB6641 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -63,6 +101,8 @@
 			children = (
 				22EA839E1B8CAD5700AB6641 /* ClipUp */,
 				22EA83B61B8CAD5700AB6641 /* ClipUpTests */,
+				22EA83CB1B8CB24700AB6641 /* Clips */,
+				22EA83C81B8CB24700AB6641 /* Frameworks */,
 				22EA839D1B8CAD5700AB6641 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,6 +112,7 @@
 			children = (
 				22EA839C1B8CAD5700AB6641 /* ClipUp.app */,
 				22EA83B31B8CAD5700AB6641 /* ClipUpTests.xctest */,
+				22EA83C71B8CB24700AB6641 /* Clips.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,6 +156,32 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		22EA83C81B8CB24700AB6641 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				22EA83C91B8CB24700AB6641 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		22EA83CB1B8CB24700AB6641 /* Clips */ = {
+			isa = PBXGroup;
+			children = (
+				22EA83CE1B8CB24700AB6641 /* TodayViewController.swift */,
+				22EA83D01B8CB24700AB6641 /* MainInterface.storyboard */,
+				22EA83CC1B8CB24700AB6641 /* Supporting Files */,
+			);
+			path = Clips;
+			sourceTree = "<group>";
+		};
+		22EA83CC1B8CB24700AB6641 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				22EA83CD1B8CB24700AB6641 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -125,10 +192,12 @@
 				22EA83981B8CAD5600AB6641 /* Sources */,
 				22EA83991B8CAD5600AB6641 /* Frameworks */,
 				22EA839A1B8CAD5600AB6641 /* Resources */,
+				22EA83D81B8CB24700AB6641 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				22EA83D31B8CB24700AB6641 /* PBXTargetDependency */,
 			);
 			name = ClipUp;
 			productName = ClipUp;
@@ -153,6 +222,23 @@
 			productReference = 22EA83B31B8CAD5700AB6641 /* ClipUpTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		22EA83C61B8CB24700AB6641 /* Clips */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22EA83D51B8CB24700AB6641 /* Build configuration list for PBXNativeTarget "Clips" */;
+			buildPhases = (
+				22EA83C31B8CB24700AB6641 /* Sources */,
+				22EA83C41B8CB24700AB6641 /* Frameworks */,
+				22EA83C51B8CB24700AB6641 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Clips;
+			productName = Clips;
+			productReference = 22EA83C71B8CB24700AB6641 /* Clips.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -168,6 +254,9 @@
 					22EA83B21B8CAD5700AB6641 = {
 						CreatedOnToolsVersion = 6.4;
 						TestTargetID = 22EA839B1B8CAD5600AB6641;
+					};
+					22EA83C61B8CB24700AB6641 = {
+						CreatedOnToolsVersion = 6.4;
 					};
 				};
 			};
@@ -186,6 +275,7 @@
 			targets = (
 				22EA839B1B8CAD5600AB6641 /* ClipUp */,
 				22EA83B21B8CAD5700AB6641 /* ClipUpTests */,
+				22EA83C61B8CB24700AB6641 /* Clips */,
 			);
 		};
 /* End PBXProject section */
@@ -205,6 +295,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22EA83C51B8CB24700AB6641 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22EA83D11B8CB24700AB6641 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +327,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		22EA83C31B8CB24700AB6641 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22EA83CF1B8CB24700AB6641 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -236,6 +342,11 @@
 			isa = PBXTargetDependency;
 			target = 22EA839B1B8CAD5600AB6641 /* ClipUp */;
 			targetProxy = 22EA83B41B8CAD5700AB6641 /* PBXContainerItemProxy */;
+		};
+		22EA83D31B8CB24700AB6641 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22EA83C61B8CB24700AB6641 /* Clips */;
+			targetProxy = 22EA83D21B8CB24700AB6641 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -396,6 +507,30 @@
 			};
 			name = Release;
 		};
+		22EA83D61B8CB24700AB6641 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Clips/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		22EA83D71B8CB24700AB6641 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Clips/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -421,6 +556,14 @@
 			buildConfigurations = (
 				22EA83C11B8CAD5700AB6641 /* Debug */,
 				22EA83C21B8CAD5700AB6641 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		22EA83D51B8CB24700AB6641 /* Build configuration list for PBXNativeTarget "Clips" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22EA83D61B8CB24700AB6641 /* Debug */,
+				22EA83D71B8CB24700AB6641 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
