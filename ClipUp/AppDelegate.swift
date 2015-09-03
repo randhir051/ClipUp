@@ -12,6 +12,7 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDelegate {
 
     var window: UIWindow?
+    var objects = [AnyObject]()
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
@@ -19,6 +20,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         let splitViewController = self.window!.rootViewController as! UISplitViewController
         let navigationController = splitViewController.viewControllers[splitViewController.viewControllers.count-1] as! UINavigationController
         navigationController.topViewController.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem()
+        let nums = NSUserDefaults.standardUserDefaults().integerForKey("clips")
+        println("number of clips "+nums.description)
+        if nums != 0 {
+        for  i in 1...nums  {
+            if let str = NSUserDefaults.standardUserDefaults().stringForKey("clip"+i.description+"name") {
+                objects.insert(str, atIndex: objects.count)
+                println("stored clip: "+str)
+            }
+        }
+        }
         splitViewController.delegate = self
         return true
     }
